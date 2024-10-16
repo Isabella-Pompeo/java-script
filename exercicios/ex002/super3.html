@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+    <style>
+      body {
+        background-color: navajowhite;
+        color: darkred;
+      }
+      
+      p {
+        background-color: darkred;
+        color: navajowhite;
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+      }
+      
+      p:hover {
+        background-color: indianred;
+        color: darkred;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Ola, mundo</h1>
+      <p>top 1</p>
+      <p>top 2</p>
+      <p>top 3</p>
+    
+    
+<script>
+  var nome = window.prompt('Digite seu nome: ');
+  var sobrenome = window.prompt('Digite seu sobrenome: ');
+  
+  document.write(`Bem vindo(a), <strong>${nome} ${sobrenome}</strong></br>`);
+  document.write(`Seu nome tem ${nome.length} letras</br>`);
+  document.write(`Seu sobrenome em letras maiúsculas é ${sobrenome.toLocaleUpperCase()}</br>`);
+  document.write(`Seu sobrenome em letras minúsculas ${sobrenome.toLowerCase()}</br>`);
+  
+  
+  
+  
+</script>
+</body>
+</html>
