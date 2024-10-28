@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: linear-gradient(to bottom, #FBE4D8, #DFB6B2);
+      background-attachment: fixed;
+      font: normal 14pt Arial;
+    }
+    
+    #msg{
+      width: 150px;
+      height: 50px;
+      padding-left: 9px;
+      padding-top: 20px;
+      border-radius: 30px;
+    }
+    
+     div #msg:hover{
+      background-color: #DFB6B2;
+      color: #522B5B;
+    }
+    
+  </style>
+</head>
+<body>
+  <p>Iniciando os estudos em DOM</p>
+  <p>Aqui vai o resultado: </p>
+  <p>Aprendendo a usar o <strong>DOM </strong>em JavaScript</p>
+  <div id="msg">Clique em mim</div>
+  <p id="m2"></p>
+  
+  <script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[1]
+    var m2 = window.document.getElementById('m2')
+    window.document.write('Está escrito assim: ' + p1.innerText)
+    p1.style.color = '#854FC6';
+    //corpo.style.background = 'pink';
+    var e = window.document.getElementById('msg');
+    e.style.background = '#522B5B';
+    e.style.color = '#FBE4D8';
+    m2.innerHTML = 'Estou digitando a palavra <strong>DOM</strong>';
+  </script>
+</body>
+</html>
